@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>BMSlogin</title>
+		<link rel="stylesheet" type="text/css" href="bms.css"/>
+	</head>
+	<body>
+		<div class="container">
+		<h1><b style="color: darkgreen;">BMS</h1>
+		<br/><h2>Customer's Account Management System</h2></b>
+			<div id="image">
+				<center><img src="..\SummerProject\BMSlogosm.png" alt="Logo"/></center>
+			</div>
+			<div id="text">
+				Please Login!
+			</div>
+			<div id="bmslf">
+				<form action="pbmsp.php" method="POST">
+					<br/>
+					<label>Email:</label>
+					<input type="email" id="email" name="email" required><br/>
+					<label>Password:</label>
+					<input type="password" id="password" name="Password" required><br/>
+					<input type="submit" name="Login" value="Log In" id="login" onclick="logIn()"/>
+					<div id="case">
+					<nav id="ul"><a href="utl.html">Unable To Login?</a></nav>
+					</div>
+				</form>
+			</div>
+			<div id="portal">
+				<button onclick="redirectToP()" type="button">Back To Portal </button>
+			</div>
+			<script>
+				 function redirectToP()
+				{
+					window.location.href = 'spl.html';
+				}
+			</script>
+		</div>
+	</body>
+</html>
+			

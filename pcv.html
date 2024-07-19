@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PwdChangeEmailVerification</title>
+	<link rel="stylesheet" type="text/css" href="pcv.css"/>
+	<link rel="stylesheet" type="text/css" href="css/all.min.css"/>
+</head>
+<body>
+	<div class="container">
+		<h1><b style="color: darkgreen;">BMS</h1>
+		<br/><h2>Bank Management System</h2></b>
+		<div id="image">
+			<center><img src="..\SummerProject\BMSlogosm.png" alt="Logo"/></center>
+		</div>
+		<div id="form">
+			<form  action="pcv.php" method="POST" onsubmit="return redirectToEcv()">
+			<p>We will be sending a verification code to this email.</p>
+				<label>Username:</label>
+				<input type="text" id="username" name="username" required><br/> 
+				<label>Email:</label>
+				<input type="email" id="email" name="email" required><br/>
+				<input type="submit" name="submit" value="Send Code" /><br/><br/>
+			</form>
+		</div>
+		<div id="cancel">
+            <button id="cancelButton" onclick="cancel()" type="button">Cancel</button>
+        </div>
+		<script>
+            function redirectToEcv() {
+                const username = document.getElementById('username').value;
+                const email = document.getElementById('email').value;
+
+                // Perform manual validation
+                if (!username || !email) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+				else
+                // If validation passes, redirect
+                window.location.href = 'ecv.html';
+            }
+
+            function cancel() {
+                window.location.href = 'utl.html';
+            }
+        </script>
+	</div> 
+</body>
+</html>

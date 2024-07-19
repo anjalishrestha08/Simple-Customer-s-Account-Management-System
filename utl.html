@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>UnableToLogin</title>
+		<link rel="stylesheet" type="text/css" href="utl.css"/>
+		<link rel="stylesheet" type="text/css" href="css/all.min.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<h1><b style="color: darkgreen;">BMS</h1>
+			<br/><h2>Customer's Account Management System</h2></b>
+			<div id="image">
+				<center><img src="..\SummerProject\BMSlogosm.png" alt="Logo"/></center>
+			</div>
+			<div id="button">
+			  <button onclick="redirectToRna()">Request New Account Activation ></button>
+			  <button onclick="redirectToAr()">Forgot Password?</button>
+			</div>
+				<script>
+					function redirectToRna()
+					{
+					  window.location.href = 'rnaa.html';
+					}
+					function redirectToAr()
+					{
+					  window.location.href = 'pc.html';
+					}
+			  </script>
+			<div>
+				<nav id="goback"><a href="bms.html"><b>Go Back to Login?</b></a></nav>
+			</div>
+		</div>
+	</body>
+</html>

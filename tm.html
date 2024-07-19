@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransferMoney</title>
+    <link rel="stylesheet" type="text/css" href="tm.css">
+</head>
+<body>
+   <div class="container">
+		<h1><b style="color: darkgreen;">BMS</h1>
+		<br/><h2>Customer's Account Management System</h2></b>
+		<div id="image">
+			<center><img src="..\SummerProject\BMSlogosm.png" alt="Logo"/></center>
+		</div>
+		<div id="tm">
+			<form action="tm.php" method="POST">
+			<br/>
+				<label>AccountNo:</label>
+				<input type="number" id="saccount" name="saccount" placeholder="Enter your account number." required><br>
+				<label>AccountNo:</label>
+				<input type="text" id="raccount" name="raccount" placeholder="Enter Receiver's account number." required><br>
+				<label>Amount:</label>
+				<input type="text" id="amount" name="amount" required><br>
+				<label>PinNo:</label>
+				<input type="password" id="pin" name="pin" maxlength="4" pattern="\d{4}" placeholder="Enter your transaction PIN." required><br>
+				<label>Remarks:</label>
+				<input type="text" id="remarks" name="remarks" required><br><br>
+				<input type="submit"  name="transfer" value="Transfer Money"><br/><br/>
+			</form>
+		</div>
+		
+		
+		<div id="cancel">
+            <button id="cancelButton" onclick="cancel()" type="button">Cancel</button>
+        </div>
+		<script>
+		function cancel() 
+		{
+            window.location.href = 'udb.php'; // Change this to the appropriate page
+        }
+		</script>
+	</div>
+</body>
+</html>	 

@@ -1,0 +1,111 @@
+body 
+{
+  font-family: TimesNewRoman;
+  margin: 0;
+  padding: 0;
+}
+.container 
+{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+  background: darkseagreen;
+  text-align: center;
+}
+#image 
+{
+  position:relative;
+  top:-25px;
+  left:5px;
+  margin: 20px auto; /* Center the image horizontally */
+  width: 30%; /* Adjusted to be 30% of the container width */
+  max-width: 400px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border: dashed 4px darkgreen;
+  border-radius: 50%;
+  overflow: hidden;
+}
+h1 {
+  position:relative;
+  top:20px;
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+}
+h2 {
+  position:relative;
+  top:-20px;
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  
+}
+button {
+  position:relative;
+  top:-20px;
+  margin: 10px;
+  padding: 15px 20px;
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  border: solid 2px;
+  border-color: darkgreen;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #C1E1C1;
+}
+button:hover 
+{
+  color: #fff;
+  transform: scale(1.05);
+  background:darkgreen;
+
+}
+button:nth-child(1):hover {
+  background-color: #218838 ;
+}
+button:nth-child(2):hover 
+{
+  background-color:  #28a745 ;
+}
+/*
+.container
+{	
+	overflow:hidden;
+	height:712px;
+	background:darkseagreen;
+}
+#image
+{
+	position:relative;
+	left: 580px;
+    top: 155px;
+	border:solid;
+	width:400px;
+	height:400px;
+	border-style:dashed;
+	border-color:darkgreen;
+}
+h1 {
+    font-size: 50px;
+    position: absolute;
+    top:20px;
+    left: 740px;
+	text-align:center;
+}
+h2 {
+    position: absolute;
+    top: 90px;
+    left: 665px;
+	text-align:center;
+}
+#go
+{
+	position: relative;
+	top: 200px;
+    left: 760px;
+	color: green;
+	font-size:25px;
+}
+*/
+

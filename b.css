@@ -1,0 +1,90 @@
+body {
+  font-family: TimesNewRoman;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  overflow: scroll;
+  height: 100vh;
+  background: darkseagreen;
+}
+#image {
+  margin: 20px auto;
+  width: 30%; /* Adjusted to be 30% of the container width */
+  max-width: 200px;
+  height: auto;
+  border: dashed 3px darkgreen;
+  position:relative;
+  top:-170px;
+  left:-645px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+h1 {
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:35px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+h2 {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:15px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+h3 {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  margin: 10px 0;
+  position:relative;
+  top:-225px;
+  left:475px;
+  max-width: 620px;
+  border: dashed 3px darkgreen;
+  background:#C1E1C1;
+  text-align:center;
+}
+#balance 
+{
+	position:relative;
+	top:-230px;
+	padding:10px;
+    margin: 10px auto;
+    width: 70%; /* Adjusted to be 70% of the container width */
+    max-width: 650px;
+	max-height: 500px;
+    background: white;
+    border: solid 3px darkseagreen;
+    border-radius: 10px;
+	font-size: 1.5vw;
+  
+}
+#history 
+{
+	position:relative;
+	top: -230px;
+    left: 20px;
+	margin: 5px auto;
+	padding:10px;
+    width: 50%;
+	max-width: 600px;
+	max-height: 1500px;
+    border-collapse: collapse;
+	background-color: #C1E1C1;
+	overflow: scroll;   /* Add scroll if table exceeds container */
+}
+th, td 
+{
+    padding: 8px;
+    text-align: left;
+    border: 2px solid;
+}
+th 
+{
+    background-color: seagreen;
+}

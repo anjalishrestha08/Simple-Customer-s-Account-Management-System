@@ -1,0 +1,120 @@
+body {
+  font-family: TimesNewRoman;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  overflow: hidden;
+  height: 100vh;
+  background: darkseagreen;
+}
+#image {
+  margin: 20px auto;
+  width: 30%; /* Adjusted to be 30% of the container width */
+  max-width: 200px;
+  height: auto;
+  border: dashed 3px darkgreen;
+  position:relative;
+  top:-170px;
+  left:-645px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+h1 {
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:35px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+h2 {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:15px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+h3 {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  margin: 10px 0;
+  position:relative;
+  top:-225px;
+  left:200px;
+}
+nav
+{
+	position:relative;
+	top:177.5px;
+	text-align: center;
+	background:#C1E1C1;
+	padding:2px;
+	border-radius:3px;
+	font-size:40px;
+}
+nav a
+{
+	color:black;
+	margin:30px;
+	text-decoration:none;
+}
+nav a:hover
+{
+	color:darkgreen;
+}
+nav a:active
+{
+	color:green;
+}
+nav a:after
+{
+	content:'|';
+	margin-left:60px;
+}
+nav a:last-child:after
+{
+	content:' ';
+}
+nav a.inactive 
+{
+    color: gray;  /* Change color to a muted or inactive color */
+    cursor: not-allowed;  /* Change cursor to indicate non-clickable */
+}
+button {
+  position:relative;
+  top:-20px;
+  left:595px;
+  margin: 10px;
+  padding: 15px 20px;
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  border: solid 2px;
+  border-color: darkgreen;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #C1E1C1;
+}
+button:hover 
+{
+  color: #fff;
+  transform: scale(1.05);
+  background:darkgreen;
+
+}
+button:nth-child(1):hover {
+  background-color: #218838 ;
+}
+button:nth-child(2):hover 
+{
+  background-color:  #28a745 ;
+}
+#cancelButton 
+{
+	position: relative;
+	top: -10px;
+    left: 770px;
+	font-size:20px;	
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SPlanding</title>
+		<link rel="stylesheet" type="text/css" href="spl.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<h1><b style="color: darkgreen;">BMS</h1>
+			<br/><h2>Customer's Account Management System</h2></b>
+			<div id="image">
+				<center><img src="..\SummerProject\BMSlogo.png"alt="Logo"/></center>
+			</div>
+			<div id="button">
+			  <button onclick="redirectToAdminLogin()">Admin Portal</button>
+			  <button onclick="redirectToUserLogin()">User Portal</button>
+			</div>
+				<script>
+					function redirectToAdminLogin()
+					{
+					  window.location.href = 'adlf.html';
+					}
+					function redirectToUserLogin()
+					{
+					  window.location.href = 'bms.html';
+					}
+			  </script>
+		</div>
+	</body>
+</html>

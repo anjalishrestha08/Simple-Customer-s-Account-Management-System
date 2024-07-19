@@ -1,0 +1,84 @@
+body 
+{
+  font-family: TimesNewRoman;
+  margin: 0;
+  padding: 0;
+}
+.container 
+{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+  background: darkseagreen;
+  text-align: center;
+}
+#image {
+  margin: 20px auto;
+  width: 30%; /* Adjusted to be 30% of the container width */
+  max-width: 200px;
+  height: auto;
+  border: dashed 3px darkgreen;
+  position:relative;
+  top:-180px;
+  left:-645px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+h1 {
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:35px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+h2 {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:15px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+h3{
+	height:15px;
+	padding: 15px 20px;
+	font-size: 3vw; /* Responsive font size based on viewport width */
+	text-align: center;
+	margin: 10px 0;
+	position:relative;
+	top:15px;
+	background:#C1E1C1;
+	color: darkgreen;
+}
+button {
+  position:relative;
+  top:-120px;
+  left: -10px;
+  margin: 10px;
+  padding: 15px 20px;
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  border: solid 2px;
+  border-color: darkgreen;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #C1E1C1;
+}
+button:hover 
+{
+  color: #fff;
+  transform: scale(1.05);
+  background-color: #218838 ;
+}
+#goback
+{
+	position: relative;
+	top: -50px;
+    left: -5px;
+	color: green;
+	font-size:25px;
+}

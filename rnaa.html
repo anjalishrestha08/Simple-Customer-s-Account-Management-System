@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>NewAccountActivation</title>
+		<link rel="stylesheet" type="text/css" href="rnaa.css"/>
+	</head>
+	<body>
+		<div class="container">
+		<h1><b style="color: darkgreen;">BMS</h1>
+		<br/><h2>Customer's Account Management System</h2></b>
+			<div id="image">
+				<center><img src="..\SummerProject\BMSlogosm.png" alt="Logo"/></center>
+			</div>
+			<div id="text">
+				Please Request to Activate Your Account!
+			</div>
+			<div id="rnaaf">
+				<form action="rnaa.php" method="POST">
+					<label>Username:</label>
+					<input type="text" id="username" name="username" required><br/>
+					<label>AccountType:</label><br/>
+					<input type="radio" id="current" name="acctype" value="Current Deposit" onclick="toggleFixedPeriod(false)">Current<br/>
+					<input type="radio" id="fixed" name="acctype" value="Fixed" onclick="toggleFixedPeriod(true)">Fixed <br/>
+					<input type="radio" id="savings" name="acctype" value="Savings" onclick="toggleFixedPeriod(false)">Savings	<br/>	
+					
+					<div id="fixedPeriodD" style="display: none;">
+						<label>Fixed Period:</label>
+						<input type="number" id="fixedPeriod" name="fixedPeriod" placeholder="Fixed period is for 1-5 years only." min="1" max="5"><br/>
+					</div>
+					
+					<label>DOB:</label>
+					<input type="date" id="dob" name="dob" required><br/>
+					<label>Gender:</label>
+					<input type="text" id="gender" name="gender" required><br/>
+					<label>ContactNo:</label>
+					<input type="number" id="contact" name="contact" placeholder="Enter your 10-digit phone number." required><br/>
+					<label>Email:</label>
+					<input type="email" id="email" name="email" required><br/>
+					<label>Password:</label>
+					<input type="password" id="password" name="password" placeholder="atleast7-12 characters,0-9,@#^*special char" required><br/>
+					<label>Pin No:</label>
+					<input type="password" id="pin" name="pin" maxlength="4" pattern="\d{4}" placeholder="Enter a 4-digit numeric PIN number." required><br/>
+					<label>Initial Deposit:</label>
+					<input type="number" id="initialdeposit" name="initialdeposit" placeholder="Must be in range of 1000 to 500000." required><br/>
+					<input type="hidden" id="dor" name="dor"/>
+					<input type="submit" name="request" value="Send Request" id="request"/>
+					<input type="reset" name="reset" value="Reset" id="reset"/>
+				</form>
+				<div >
+				<button id="goback" onclick="redirectToP()" type="button">Cancel</button>
+			</div>
+			<script>
+				 function redirectToP()
+				{
+					window.location.href = 'utl.html';
+				}
+				 function toggleFixedPeriod(show) {
+                    document.getElementById('fixedPeriodD').style.display = show ? 'block' : 'none';
+                    document.getElementById('fixedPeriod').required = show;
+                }
+			</script>
+			</div>
+		</div>
+	</body>
+</html>
+			

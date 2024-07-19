@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EmailCodeVerification</title>
+	<link rel="stylesheet" type="text/css" href="ecv.css"/>
+	<link rel="stylesheet" type="text/css" href="css/all.min.css"/>
+</head>
+<body>
+	<div class="container">
+		<h1><b style="color: darkgreen;">BMS</h1>
+		<br/><h2>Customer's Account Management System</h2></b>
+		<div id="image">
+			<center><img src="..\SummerProject\BMSlogosm.png" alt="Logo"/></center>
+		</div>
+		<div id="form">
+			<form  action="#" method="POST">
+			<p>Enter the code you received.</p>
+				<label>Code:</label>
+				<input type="number" id="code" name="code" required><br/> 
+				<input type="button" id="verify" name="verify" value="Verify" onclick="redirectToPc()"/>
+				<br/>
+			</form>
+		</div>
+		<script>
+			function redirectToPc() {
+                const code = document.getElementById('code').value;
+
+                // Perform manual validation
+                if (!code) {
+                    alert('Enter the authorization code.');
+                    return;
+                }
+				else
+                // If validation passes, redirect
+                window.location.href = 'pc.html';
+            }
+
+		</script>
+	</div> 
+</body>
+</html>

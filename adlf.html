@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AdminLogin</title>
+		<link rel="stylesheet" type="text/css" href="adlf.css"/>
+		<link rel="stylesheet" type="text/css" href="css/all.min.css"/>
+	</head>
+	<body>
+		<div class="container">
+		<h1><b style="color: darkgreen;">BMS</h1>
+		<br/><h2>Admin Mode</h2></b>
+			<div id="image">
+				<center><img src="..\SummerProject\BMSlogosm.png" alt="Logo"/></center>
+			</div>
+			<div id="adlf">
+				<form action="adlf.php" method="POST">
+					<br/>
+					<label>Admin ID:</label>
+					<input type="text" id="aid" name="aid" required><br/>
+					<label>Password:</label>
+					<input type="password" id="password" name="password" required><br/>
+					<input type="submit" name="Login" value="Log In" id="login" /><br/>
+				</form>
+			</div>
+			<div id="portal">
+				<button onclick="redirectToP()" type="button">Back To Portal </button>
+			</div>
+			<script>
+				function redirectToP() 
+				{
+					window.location.href = 'spl.html';
+				}
+			</script>
+		</div>
+	</body>
+</html>
+			

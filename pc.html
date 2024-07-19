@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password</title>
+    <link rel="stylesheet" type="text/css" href="pc.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1><b style="color: darkgreen;">BMS</h1>
+        <br/><h2>Customer's Account Management System</h2></b>
+        <div id="image">
+            <center><img src="..\SummerProject\BMSlogosm.png" alt="Logo"/></center>
+        </div>
+        <div id="form">
+            <form id="recoveryForm" action="pc.php" method="POST"> 
+                <br/>
+                <label>Account No:</label>
+                <input type="number" id="accno" name="accno" required><br/>
+				<label>Email ID:</label>
+                <input type="email" id="email" name="email" required><br/>
+                <label>New Password:</label>
+                <input type="password" id="newPassword" name="newPassword"  placeholder="atleast7-12 characters,0-9,special char @#^*" required><br/>
+                <label>Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-Enter the Password" required><br/><br/>
+                <input type="submit" name="submit" value="Save Changes"/> 
+                <button id="resetButton" type="reset">Reset</button>
+                <br/>
+            </form>
+        </div>
+        <div id="cancel">
+            <button id="cancelButton" onclick="cancel()" type="button">Cancel</button>
+        </div>
+        <script>
+            function cancel() {
+                window.location.href = 'utl.html'; 
+            }
+        </script>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+  font-family: TimesNewRoman;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  overflow: hidden;
+  height: 100vh;
+  background: darkseagreen;
+}
+#image {
+  margin: 20px auto;
+  width: 30%; /* Adjusted to be 30% of the container width */
+  max-width: 200px;
+  height: auto;
+  border: dashed 3px darkgreen;
+  position:relative;
+  top:-170px;
+  left:-645px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+h1 {
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:35px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+h2 {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:15px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+#tm {
+  position:relative;
+  top:-180px;
+  font-size: 1.5vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 20px auto;
+  width: 50%; /* Adjusted to be 50% of the container width */
+  max-width: 500px;
+  font-family: TimesNewRoman;
+  height: auto;
+  border: solid 2px;
+  background: #C1E1C1;
+}
+input 
+{
+    width: 40%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+input:hover 
+{
+  color: #fff;
+  transform: scale(1.05);
+  background:darkseagreen;
+}
+ button
+{
+	position:relative;
+	top:-155px; 
+	left:715px;
+	font-size:15px;
+}
+button:hover 
+{
+  color: #fff;
+  transform: scale(1.05);
+  background:seagreen;
+}
+#cancelButton 
+{
+	position: relative;
+	top: -170px;
+    left: 750px;
+	font-size:20px;	
+}

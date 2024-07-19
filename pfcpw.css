@@ -1,0 +1,157 @@
+body {
+  font-family: TimesNewRoman;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  overflow: hidden;
+  height: 100vh;
+  background: darkseagreen;
+}
+#image {
+  margin: 20px auto;
+  width: 30%; /* Adjusted to be 30% of the container width */
+  max-width: 200px;
+  height: auto;
+  border: dashed 3px darkgreen;
+  position:relative;
+  top:-170px;
+  left:-645px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+h1 {
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:35px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+h2 {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:15px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+h3 {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  margin: 10px 0;
+  position:relative;
+  top:-200px;
+  left:480px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+  width: 350px;
+}
+#text {
+  position:relative;
+  top:-200px;
+  left: -500px;
+  padding:1vw;
+  margin: 20px auto;
+  width: 50%; /* Adjusted to be 50% of the container width */
+  max-width: 300px;
+  height: auto;
+  font-family: TimesNewRoman;
+  font-size: 1.5vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  background: #C1E1C1;
+  border: dashed 3px darkgreen; 
+}
+#change_pwd {
+  position:relative;
+  top:-190px;
+  padding:15px;
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  margin: 20px auto;
+  width: 50%; /* Adjusted to be 50% of the container width */
+  max-width: 550px;
+  font-family: TimesNewRoman;
+  height: auto;
+  border: solid 2px;
+  background: #C1E1C1;
+}
+input 
+{
+    width: 40%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+input:hover 
+{
+  color: #fff;
+  transform: scale(1.05);
+  background:darkseagreen;
+}
+#menu
+{
+	position:relative;
+	top:-225px;
+	left:350px;
+	height:100px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+#menu-Statements 
+{
+	position:relative;      top: 40px; left: -230px;
+	width:150px;	height:150px;
+	font-size:2vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-Statements:hover {
+    background-color:seagreen;
+    color: #fff;
+}
+#menu-Balance
+{
+	position:relative;	top:-140px; left:-15px;
+	width:150px;	height:150px;
+	font-size:2vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-Balance:hover 
+{
+    background-color: seagreen;
+    color: #fff;
+}
+button 
+{
+    width: 100px; /* Set the width of the buttons */
+    padding: 5px;
+    margin:  5px;
+	text-align: center;
+    border: solid 0.5px;
+    cursor: pointer;
+    font-size: 1vw;
+	background-color: #C1E1C1;
+}
+button:hover 
+{
+  color: #fff;
+  transform: scale(1.05);
+  background: seagreen;
+}
+#cancelButton 
+{
+	position: relative;
+	top: 15px;
+    left: 770px;
+	font-size:20px;	
+}

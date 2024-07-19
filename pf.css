@@ -1,0 +1,195 @@
+body {
+  font-family: TimesNewRoman;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  overflow: hidden;
+  height: 100vh;
+  background: darkseagreen;
+}
+#image {
+  margin: 20px auto;
+  width: 30%; /* Adjusted to be 30% of the container width */
+  max-width: 200px;
+  height: auto;
+  border: dashed 3px darkgreen;
+  position:relative;
+  top:-170px;
+  left:-645px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+h1 {
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:35px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+h2 {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:15px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+#text {
+  position:relative;
+  top:-160px;
+  left: -400px;
+  padding:1vw;
+  margin: 20px auto;
+  width: 50%; /* Adjusted to be 50% of the container width */
+  max-width: 500px;
+  height: auto;
+  font-family: TimesNewRoman;
+  font-size: 1.8vw; /* Responsive font size based on viewport width */
+  text-align: left;
+  background: #C1E1C1;
+  border: dashed 3px darkgreen;
+  
+}
+b
+{
+	color: darkgreen;
+}
+nav
+{
+	position:relative;
+	top:-220.5px;
+	text-align: center;
+	background:#C1E1C1;
+	padding:2px;
+	border-radius:3px;
+	font-size:40px;
+}
+nav a
+{
+	color:black;
+	margin:30px;
+	text-decoration:none;
+}
+nav a:hover
+{
+	color:darkgreen;
+}
+nav a:active
+{
+	color:green;
+}
+nav a:after
+{
+	content:'|';
+	margin-left:60px;
+}
+nav a:last-child:after
+{
+	content:' ';
+}
+nav a.inactive 
+{
+    color: gray;  /* Change color to a muted or inactive color */
+    cursor: not-allowed;  /* Change cursor to indicate non-clickable */
+}
+#menu
+{
+	position:relative;
+	top: -450px;
+    left: 935px;
+	height:100px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+#menu-edit
+{
+	position:relative; 
+	width:40px;	height:15px;
+	font-size:1.5vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-edit:hover {
+    background-color:seagreen;
+    color: #fff;
+}
+#menu-Password 
+{
+	position:relative;      top: 40px; left: -230px;
+	width:150px;	height:150px;
+	font-size:2vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-Password:hover {
+    background-color:seagreen;
+    color: #fff;
+}
+#menu-Pin
+{
+	position:relative;	top:-140px; left:40px;
+	width:150px;	height:150px;
+	font-size:2vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-Pin:hover 
+{
+    background-color: seagreen;
+    color: #fff;
+}
+#menu-Del
+{
+	position:relative;	top:-320px; left:310px;
+	width:150px;	height:150px;
+	font-size:2vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-Del:hover 
+{
+    background-color: seagreen;
+    color: #fff;
+}
+button 
+{
+    width: 100px; /* Set the width of the buttons */
+    padding: 5px;
+    margin:  5px;
+	text-align: center;
+    border: solid 0.5px;
+    cursor: pointer;
+    font-size: 1vw;
+	background-color: #C1E1C1;
+}
+button:hover 
+{
+  color: #fff;
+  transform: scale(1.05);
+  background: seagreen;
+}
+#cancelButton 
+{
+	position: relative;
+	top: 15px;
+    left: 770px;
+	font-size:20px;	
+}

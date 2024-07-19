@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Interface</title>
+    <style>
+        /* Add your styles here */
+        .tabs {
+            display: flex;
+            list-style: none;
+            padding: 0;
+			position:relative;
+			top:-200px;
+			left:100px;
+        }
+
+        .tab {
+            cursor: pointer;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .tab:hover {
+            background-color: #ddd;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 0 5px 5px 5px;
+            background-color: #fff;
+        }
+
+        .tab-content.active {
+            display: block;
+			position:relative;
+			top:-200px;
+			left:100px;
+        }
+		body {
+  font-family: TimesNewRoman;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  overflow: hidden;
+  height: 100vh;
+  background: darkseagreen;
+}
+#image {
+  margin: 20px auto;
+  width: 30%; /* Adjusted to be 30% of the container width */
+  max-width: 200px;
+  height: auto;
+  border: dashed 3px darkgreen;
+  position:relative;
+  top:-170px;
+  left:-645px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+h1 {
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:35px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+h2 {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  text-align: center;
+  margin: 10px 0;
+  position:relative;
+  top:15px;
+  border: solid 3px darkgreen;
+  background:#C1E1C1;
+}
+h3 {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  margin: 10px 0;
+  position:relative;
+  top:-225px;
+  left:200px;
+}
+#menu
+{
+	position:relative;
+	top:-105px;
+	left:350px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+#menu-Statements 
+{
+	position:relative; top:10px; left:50px;
+	width:150px;	height:150px;
+	font-size:2vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-Statements:hover {
+    background-color:seagreen;
+    color: #fff;
+}
+#menu-MyAccount
+{
+	position:relative; top:-170px; left:260px;
+	width:150px;	height:150px;
+	font-size:2vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-MyAccount:hover 
+{
+    background-color: seagreen;
+    color: #fff;
+}
+#menu-Balance
+{
+	position:relative; top:-350px; left:470px;
+	width:150px;	height:150px;
+	font-size:2vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-Balance:hover 
+{
+    background-color: seagreen;
+    color: #fff;
+}
+#menu-RecentTransactions 
+{
+	position:relative; top:-530px; left:680px;
+	width:150px;	height:150px;
+	font-size:2vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-RecentTransactions:hover {
+    background-color: seagreen;
+    color: #fff;
+}
+#menu-PaymentHistory 
+{
+	position:relative; top:-525px; left:155px;
+	width:150px;	height:150px;
+	font-size:2vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-PaymentHistory:hover {
+    background-color: seagreen;
+    color: #fff;
+}
+#menu-SavedPayment 
+{
+	position:relative; top:-705px; left:365px;
+	width:150px;	height:150px;
+	font-size:2vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-SavedPayment:hover {
+    background-color: seagreen;
+    color: #fff;
+}
+#menu-ReportProblem 
+{
+	position:relative; top:-885px; left:575px;
+	width:150px;	height:150px;
+	font-size:2vw;	text-align: center;
+    border:3px solid darkgreen;	border-radius:20%;
+    padding:10px;	 margin: 5px;	cursor: pointer;
+    transition:background-color 0.3s;
+    display:flex;	align-items:center;
+	background-color: #C1E1C1;
+}
+#menu-ReportProblem:hover {
+    background-color: seagreen;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+		<h1><b style="color: darkgreen;">BMS</h1>
+		<br/><h2>Customer's Account Management System</h2></b>
+			<div id="image">
+				<center><img src="..\SummerProject\BMSlogosm.png" alt="Logo"/></center>
+			</div>
+        <h3>Welcome to Your Bank,</h3>
+    <div class="tabs">
+        <div class="tab" onclick="openTab('tab1')">Tab 1</div>
+        <div class="tab" onclick="openTab('tab2')">Tab 2</div>
+        <div class="tab" onclick="openTab('tab3')">Tab 3</div>
+    </div>
+
+    <div id="tab1" class="tab-content active">
+                <div id="menu">
+            <ul>
+                <li><div id="menu-Statements" onclick="loadContent('statements.html')"><i id="fas fa-file-alt"></i> Statements</div></li>
+                <li><div id="menu-MyAccount" onclick="loadContent('my-account.html')"><i id="fas fa-user"></i> My Account</div></li>
+				<li><div id="menu-Balance" onclick="loadContent('balance.html')"><i id="fas fa-clock"></i> Balance</div></li>
+				<li><div id="menu-RecentTransactions" onclick="loadContent('recent-transactions.html')"><i id="fas fa-clock"></i> Recent Transactions</div></li>
+                <li><div id="menu-PaymentHistory" onclick="loadContent('payment-history.html')"><i id="fas fa-history"></i> Payment History</div></li>
+				<li><div id="menu-SavedPayment" onclick="loadContent('savedpayment.html')"><i id="fas fa-exchange-alt"></i>Saved Payment</div></li>
+                <li><div id="menu-ReportProblem" onclick="loadContent('reportproblem.html')"><i id="fas fa-exchange-alt"></i> Report a Problem</div></li>
+                
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div id="tab2" class="tab-content">
+        <!-- Content for Tab 2 -->
+        <h2>Tab 2 Content</h2>
+        <p>This is the content for Tab 2.</p>
+    </div>
+
+    <div id="tab3" class="tab-content">
+        <!-- Content for Tab 3 -->
+        <h2>Tab 3 Content</h2>
+        <p>This is the content for Tab 3.</p>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            // Hide all tab contents
+            var tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(function (tabContent) {
+                tabContent.classList.remove('active');
+            });
+
+            // Show the selected tab content
+            document.getElementById(tabName).classList.add('active');
+        }
+    </script>
+</body>
+</html>
